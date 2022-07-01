@@ -10,7 +10,7 @@ public class CreateAccountTest extends TestBase {
     // click on the Link Login
     @BeforeMethod
     public void ensurePrecondition() {
-        if (!isSignOutButtonPresent()) {
+        if (!isLoginLinkPresent()) {
             click(By.xpath("//button[contains(.,'Sign Out')]"));
             Assert.assertTrue(isElementPresent(By.cssSelector("login_login__3EHKB")));
         }

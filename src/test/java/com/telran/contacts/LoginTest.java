@@ -9,7 +9,7 @@ public class LoginTest extends TestBase {
 
     @BeforeMethod
     public void ensurePrecondition() {
-        if (!isSignOutButtonPresent()) {
+        if (!isLoginLinkPresent()) {
             driver.findElement(By.xpath("//button[contains(.,'Sign Out')]"));
 
         }
