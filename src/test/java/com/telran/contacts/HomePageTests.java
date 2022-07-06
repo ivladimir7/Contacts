@@ -9,7 +9,7 @@ public class HomePageTests extends TestBase{
     @Test
     public void openHomePageTest() {
         System.out.println("Site opened!!!");
-        isElementPresent(By.cssSelector("div:nth-child(2)>div>div"));
+        isComponentFrmPresent();
     }
 
 }
