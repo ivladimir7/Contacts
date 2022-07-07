@@ -13,21 +13,21 @@ public class AddContactTest extends TestBase{
 
     @BeforeMethod
     public void ensurePreconditions() {
-        if (!isLoginLinkPresent()) {
-            clickOnSignOutButton();
+        if (!app.isLoginLinkPresent()) {
+            app.clickOnSignOutButton();
         } else {
-            login();
+            app.getUser().login();
         }
     }
 
     @Test
     public  void addContactPositiveTest() {
-        AddContact();
+        app.getContact().AddContact();
         Assert.assertTrue(isContactCreated("Amina"));
     }
 
     public boolean isContactCreated(String text) {
-        List<WebElement> contacts = driver.findElements(By.cssSelector("h2"));
+        List<WebElement> contacts = app.driver.findElements(By.cssSelector("h2"));
         for (WebElement el:contacts) {
             if (el.getText().contains(text)) ;
             return true;
@@ -37,7 +37,7 @@ public class AddContactTest extends TestBase{
         @AfterMethod
     public  void postCondition()
         {
-        removeContact();
+        app. getContact().removeContact();
         }
 }
 

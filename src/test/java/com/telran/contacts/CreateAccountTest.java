@@ -10,17 +10,17 @@ public class CreateAccountTest extends TestBase {
     // click on the Link Login
     @BeforeMethod
     public void ensurePrecondition() {
-        if (!isLoginLinkPresent()) {
-            clickOnSignOutButton();
-            Assert.assertTrue(isElementPresent(By.cssSelector("login_login__3EHKB")));
+        if (!app.isLoginLinkPresent()) {
+            app.clickOnSignOutButton();
+            Assert.assertTrue(app.isElementPresent(By.cssSelector("login_login__3EHKB")));
         }
     }
 
     @Test
     public void registrationPositiveTest() {
-        Registration();
+        app.getUser().Registration();
         //assert the button Sign out displayed
-        Assert.assertTrue(isElementPresent(By.xpath("//button[contains(.,'Sign Out')]")));
+        Assert.assertTrue(app.isElementPresent(By.xpath("//button[contains(.,'Sign Out')]")));
     }
 
 }

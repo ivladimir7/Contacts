@@ -1,0 +1,30 @@
+package com.telran.contacts;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class UserHelper extends HelperBase {
+    public UserHelper(WebDriver driver) {
+        super(driver);
+    }
+
+    public void Registration() {
+        click(By.xpath("//a[contains(.,'LOGIN')]"));
+        //fill registration form
+        fillLoginRegistrationForm(new User().setEmail("testfortest@gmail.com").setPassword( "AA1616aa_-q"));
+        //click on the button Registration
+        click(By.xpath("//button[contains(.,'Registration')]"));
+    }
+
+    public void fillLoginRegistrationForm(User user) {
+        type(By.cssSelector("[placeholder='Email']"), user.getEmail());
+        type(By.cssSelector("[placeholder='Password']"), user.getPassword());
+    }
+
+    public void login() {
+        click(By.xpath("//a[contains(.,'LOGIN')]"));
+        type(By.cssSelector("[placeholder='Email']"), "testfortest@gmail.com");
+        type(By.cssSelector("[placeholder='Password"), "AA1616aa_-q");
+        click(By.xpath("//button[contains(.,'Login')]"));
+    }
+}
