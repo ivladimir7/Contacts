@@ -9,7 +9,7 @@ public class LoginTest extends TestBase {
 
     @BeforeMethod
     public void ensurePrecondition() {
-        if (!app.isLoginLinkPresent()) {
+        if (!app.getHeader().isLoginLinkPresent()) {
             app.driver.findElement(By.xpath("//button[contains(.,'Sign Out')]"));
 
         }
@@ -20,7 +20,7 @@ public class LoginTest extends TestBase {
         //click on Login link
         app.getUser().login();
         //assert the button SignOut
-        Assert.assertTrue(app.isElementPresent(By.xpath("//button[contains(.,'Sign Out')]")));
+        Assert.assertTrue(app.getHeader().isElementPresent(By.xpath("//button[contains(.,'Sign Out')]")));
     }
 
 }

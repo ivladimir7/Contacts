@@ -1,45 +1,37 @@
 package com.telran.contacts;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.concurrent.TimeUnit;
 
-public class ApplicationManager extends HelperBase{
+public class ApplicationManager {
 
     WebDriver driver;
     UserHelper user;
     ContactHelper contact;
+    HeaderHelper header;
 
-    protected void init() {
-        driver = new ChromeDriver();
-        driver.get("https://contacts-app.tobbymarshall815.vercel.app");
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-
-        user = new UserHelper(driver);
-        contact = new ContactHelper(driver);
-    }
-
-    public boolean isComponentFormPresent() {
-        return isElementPresent(By.cssSelector("div:nth-child(2)>div>div"));
+    public HeaderHelper getHeader() {
+        return header;
     }
 
     public UserHelper getUser() {
         return user;
     }
-
-    public ContactHelper getContact() {
+    public ContactHelper getContact () {
         return contact;
     }
 
-    public boolean isLoginLinkPresent() {
-        return isElementPresent(By.xpath("//a[contains(.,'LOGIN')]"));
-    }
+        protected void init() {
+            driver = new ChromeDriver();
+            driver.get("https://contacts-app.tobbymarshall815.vercel.app");
+            driver.manage().window().maximize();
+            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
-    public void clickOnSignOutButton() {
-        click(By.xpath("//button[contains(.,'Sign Out')]"));
-    }
+            user = new UserHelper(driver);
+            contact = new ContactHelper(driver);
+            header = new HeaderHelper(driver);
 
+        }
 }

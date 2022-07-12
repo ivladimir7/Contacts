@@ -2,6 +2,9 @@ package com.telran.contacts;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+import java.util.List;
 
 public class ContactHelper extends HelperBase {
     public ContactHelper(WebDriver driver) {
@@ -43,4 +46,13 @@ public class ContactHelper extends HelperBase {
         return driver.findElements(By.cssSelector(".contact-item_card__2SOIM")).isEmpty();
 
     }
+
+    public boolean isContactCreated(String text) {
+        List<WebElement> contacts = driver.findElements(By.cssSelector("h2"));
+        for (WebElement el:contacts) {
+            if (el.getText().contains(text)) ;
+            return true;
+        }
+        return false;
+        }
 }

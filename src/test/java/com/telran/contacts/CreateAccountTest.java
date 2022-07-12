@@ -7,20 +7,21 @@ import org.testng.annotations.Test;
 
 public class CreateAccountTest extends TestBase {
     //precondition "user should be logged out
-    // click on the Link Login
+
     @BeforeMethod
     public void ensurePrecondition() {
-        if (!app.isLoginLinkPresent()) {
-            app.clickOnSignOutButton();
-            Assert.assertTrue(app.isElementPresent(By.cssSelector("login_login__3EHKB")));
+        if (!app.getHeader().isLoginLinkPresent()) {
+            app.getHeader().clickOnSignOutButton();
+            Assert.assertTrue(app.getHeader().isElementPresent(By.cssSelector("login_login__3EHKB")));
         }
     }
 
     @Test
     public void registrationPositiveTest() {
+        // click on the Link Login
         app.getUser().Registration();
         //assert the button Sign out displayed
-        Assert.assertTrue(app.isElementPresent(By.xpath("//button[contains(.,'Sign Out')]")));
+        Assert.assertTrue(app.getHeader().isElementPresent(By.xpath("//button[contains(.,'Sign Out')]")));
     }
 
 }
