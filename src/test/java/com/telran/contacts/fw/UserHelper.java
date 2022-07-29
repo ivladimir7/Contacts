@@ -1,5 +1,6 @@
-package com.telran.contacts;
+package com.telran.contacts.fw;
 
+import com.telran.contacts.models.User;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -8,10 +9,10 @@ public class UserHelper extends HelperBase {
         super(driver);
     }
 
-    public void Registration() {
+    public void registration() {
         click(By.xpath("//a[contains(.,'LOGIN')]"));
         //fill registration form
-        fillLoginRegistrationForm(new User().setEmail("testfortest@gmail.com").setPassword( "AA1616aa_-q"));
+        fillLoginRegistrationForm(new User().setEmail("testfortest88@gmail.com").setPassword( "AA1616aa_-q"));
         //click on the button Registration
         click(By.xpath("//button[contains(.,'Registration')]"));
     }

@@ -1,4 +1,4 @@
-package com.telran.contacts;
+package com.telran.contacts.models;
 
 public class User {
     private  String email;
@@ -21,4 +21,5 @@ public class User {
     public String getPassword() {
         return password;
     }
+
 }

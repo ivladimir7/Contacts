@@ -1,5 +1,6 @@
-package com.telran.contacts;
+package com.telran.contacts.fw;
 
+import com.telran.contacts.models.Contact;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -12,9 +13,9 @@ public class ContactHelper extends HelperBase {
     }
 
     public void AddContact() {
-        int i= (int) (System.currentTimeMillis())/1000;
+//        int i= (int) (System.currentTimeMillis())/1000;
         click(By.xpath("//a[contains(text(),'ADD')]"));
-        FillAddContactForm(new Contact().setName("Amina").setLastName("Mashanlo").setTel("091631616").setEmail("ami").setEmail1("@test.de").setCity("Almaty").setCountry("Kasachstan"));
+        FillAddContactForm(new Contact().setName("Amina").setLastName("Mashanlo").setTel("091631616").setEmail("ami123@test.de").setCity("Almaty").setDescription("tester"));
         clickWithAction(By.cssSelector(".add_form__2rsm2 button"));
     }
 
@@ -22,10 +23,10 @@ public class ContactHelper extends HelperBase {
     public void FillAddContactForm(Contact contact) {
         type(By.cssSelector("input:nth-child(1)"), contact.getName());
         type(By.cssSelector("input:nth-child(2)"), contact.getLastName());
-        type(By.cssSelector("input:nth-child(3)"), contact.getTel() +i);
-        type(By.cssSelector("input:nth-child(4)"), contact.getEmail() + i + contact.getEmail1());
+        type(By.cssSelector("input:nth-child(3)"), contact.getTel());
+        type(By.cssSelector("input:nth-child(4)"), contact.getEmail());
         type(By.cssSelector("input:nth-child(5)"), contact.getCity());
-        type(By.cssSelector("input:nth-child(6)"), contact.getCountry());
+        type(By.cssSelector("input:nth-child(6)"), contact.getDescription());
     }
 
     public int sizeOfContacts() {

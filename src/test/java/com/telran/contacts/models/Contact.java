@@ -1,13 +1,12 @@
-package com.telran.contacts;
+package com.telran.contacts.models;
 
 public class Contact {
     private String name;
     private String lastName;
     private String tel;
     private String email;
-    private String email1;
     private String city;
-    private String country;
+    private String description;
 
     public Contact setName(String name) {
         this.name = name;
@@ -29,9 +28,12 @@ public class Contact {
         return this;
     }
 
-    public Contact setEmail1(String email1) {
-        this.email1 = email1;
-        return this;
+    @Override
+    public String toString() {
+        return "Contact{" +
+                "name='" + name + '\'' +
+                ", tel='" + tel + '\'' +
+                '}';
     }
 
     public Contact setCity(String city) {
@@ -39,8 +41,8 @@ public class Contact {
         return this;
     }
 
-    public Contact setCountry(String country) {
-        this.country = country;
+    public Contact setDescription(String description) {
+        this.description = description;
         return this;
     }
 
@@ -62,15 +64,11 @@ public class Contact {
         return email;
     }
 
-    public String getEmail1() {
-        return email1;
-    }
-
     public String getCity() {
         return city;
     }
 
-    public String getCountry() {
-        return country;
+    public String getDescription() {
+        return description;
     }
 }

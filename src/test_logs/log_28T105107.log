@@ -1,0 +1,31 @@
+446  [Test worker] DEBUG org.testng.internal.Graph - [Graph] ADDING NODE TestBase.startTest(java.lang.reflect.Method)[pri:0, instance:null] -787804359
+449  [Test worker] DEBUG org.testng.internal.Graph - [Graph] ADDING NODE LoginTest.ensurePrecondition()[pri:0, instance:null] -1193044635
+450  [Test worker] DEBUG org.testng.internal.Graph - [Graph]   ADDING PREDECESSOR FOR LoginTest.ensurePrecondition()[pri:0, instance:null] ==> TestBase.startTest(java.lang.reflect.Method)[pri:0, instance:null]
+451  [Test worker] DEBUG org.testng.internal.Graph - [Graph]   REMOVED TestBase.startTest(java.lang.reflect.Method)[pri:0, instance:null] FROM INDEPENDENT OBJECTS
+451  [Test worker] DEBUG org.testng.internal.Graph - [Graph]   ADDING PREDECESSOR FOR LoginTest.ensurePrecondition()[pri:0, instance:null] ==> TestBase.setUp()[pri:0, instance:null]
+451  [Test worker] DEBUG org.testng.internal.Graph - [Graph]   REMOVED TestBase.setUp()[pri:0, instance:null] FROM INDEPENDENT OBJECTS
+451  [Test worker] DEBUG org.testng.internal.Graph - [Graph] ADDING NODE TestBase.setUp()[pri:0, instance:null] 1452950962
+451  [Test worker] DEBUG org.testng.internal.Graph - [Graph] ================ SORTING
+455  [ForkJoinPool.commonPool-worker-3] DEBUG org.testng.internal.Graph - [Graph]   ADDING PREDECESSOR FOR LoginTest.ensurePrecondition()[pri:0, instance:null] ==> TestBase.startTest(java.lang.reflect.Method)[pri:0, instance:null]
+455  [ForkJoinPool.commonPool-worker-3] DEBUG org.testng.internal.Graph - [Graph]   ADDING PREDECESSOR FOR LoginTest.ensurePrecondition()[pri:0, instance:null] ==> TestBase.setUp()[pri:0, instance:null]
+456  [Test worker] DEBUG org.testng.internal.Graph - [Graph]   REMOVED PRED TestBase.setUp()[pri:0, instance:null] FROM NODE LoginTest.ensurePrecondition()[pri:0, instance:null]
+457  [Test worker] DEBUG org.testng.internal.Graph - [Graph]   REMOVED PRED TestBase.startTest(java.lang.reflect.Method)[pri:0, instance:null] FROM NODE LoginTest.ensurePrecondition()[pri:0, instance:null]
+457  [Test worker] DEBUG org.testng.internal.Graph - [Graph] =============== DONE SORTING
+457  [Test worker] DEBUG org.testng.internal.Graph - [Graph] ====== SORTED NODES
+457  [Test worker] DEBUG org.testng.internal.Graph - [Graph]               TestBase.setUp()[pri:0, instance:null]
+457  [Test worker] DEBUG org.testng.internal.Graph - [Graph]               TestBase.startTest(java.lang.reflect.Method)[pri:0, instance:null]
+457  [Test worker] DEBUG org.testng.internal.Graph - [Graph]               LoginTest.ensurePrecondition()[pri:0, instance:null]
+457  [Test worker] DEBUG org.testng.internal.Graph - [Graph] ====== END SORTED NODES
+459  [Test worker] DEBUG org.testng.internal.Graph - [Graph] ADDING NODE TestBase.stopTest()[pri:0, instance:null] 908827865
+460  [Test worker] DEBUG org.testng.internal.Graph - [Graph] ADDING NODE TestBase.tearDown()[pri:0, instance:null] -858478263
+460  [Test worker] DEBUG org.testng.internal.Graph - [Graph] ================ SORTING
+460  [Test worker] DEBUG org.testng.internal.Graph - [Graph] =============== DONE SORTING
+460  [Test worker] DEBUG org.testng.internal.Graph - [Graph] ====== SORTED NODES
+460  [Test worker] DEBUG org.testng.internal.Graph - [Graph] ====== END SORTED NODES
+462  [Test worker] DEBUG org.testng.internal.Graph - [Graph] ADDING NODE LoginTest.loginUserPositiveTest()[pri:0, instance:com.telran.contacts.tests.LoginTest@59d0651a] 2102169420
+462  [Test worker] DEBUG org.testng.internal.Graph - [Graph] ================ SORTING
+462  [Test worker] DEBUG org.testng.internal.Graph - [Graph] =============== DONE SORTING
+462  [Test worker] DEBUG org.testng.internal.Graph - [Graph] ====== SORTED NODES
+462  [Test worker] DEBUG org.testng.internal.Graph - [Graph] ====== END SORTED NODES
+3914 [Test worker] INFO  com.telran.contacts.tests.TestBase - Test start loginUserPositiveTest
+4803 [Test worker] INFO  com.telran.contacts.tests.TestBase - Test stop
