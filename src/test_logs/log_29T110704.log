@@ -1,0 +1,40 @@
+365  [Test worker] DEBUG org.testng.internal.Graph - [Graph] ADDING NODE CreateAccountTest.ensurePrecondition()[pri:0, instance:null] -1826729779
+368  [Test worker] DEBUG org.testng.internal.Graph - [Graph]   ADDING PREDECESSOR FOR CreateAccountTest.ensurePrecondition()[pri:0, instance:null] ==> TestBase.startTest(java.lang.reflect.Method,[Ljava.lang.Object;)[pri:0, instance:null]
+368  [Test worker] DEBUG org.testng.internal.Graph - [Graph]   REMOVED TestBase.startTest(java.lang.reflect.Method,[Ljava.lang.Object;)[pri:0, instance:null] FROM INDEPENDENT OBJECTS
+368  [Test worker] DEBUG org.testng.internal.Graph - [Graph]   ADDING PREDECESSOR FOR CreateAccountTest.ensurePrecondition()[pri:0, instance:null] ==> TestBase.setUp()[pri:0, instance:null]
+368  [Test worker] DEBUG org.testng.internal.Graph - [Graph]   REMOVED TestBase.setUp()[pri:0, instance:null] FROM INDEPENDENT OBJECTS
+368  [Test worker] DEBUG org.testng.internal.Graph - [Graph] ADDING NODE TestBase.startTest(java.lang.reflect.Method,[Ljava.lang.Object;)[pri:0, instance:null] -787804359
+368  [Test worker] DEBUG org.testng.internal.Graph - [Graph] ADDING NODE TestBase.setUp()[pri:0, instance:null] 1452950962
+369  [Test worker] DEBUG org.testng.internal.Graph - [Graph] ================ SORTING
+384  [ForkJoinPool.commonPool-worker-3] DEBUG org.testng.internal.Graph - [Graph]   ADDING PREDECESSOR FOR CreateAccountTest.ensurePrecondition()[pri:0, instance:null] ==> TestBase.startTest(java.lang.reflect.Method,[Ljava.lang.Object;)[pri:0, instance:null]
+384  [ForkJoinPool.commonPool-worker-3] DEBUG org.testng.internal.Graph - [Graph]   ADDING PREDECESSOR FOR CreateAccountTest.ensurePrecondition()[pri:0, instance:null] ==> TestBase.setUp()[pri:0, instance:null]
+385  [Test worker] DEBUG org.testng.internal.Graph - [Graph]   REMOVED PRED TestBase.setUp()[pri:0, instance:null] FROM NODE CreateAccountTest.ensurePrecondition()[pri:0, instance:null]
+385  [Test worker] DEBUG org.testng.internal.Graph - [Graph]   REMOVED PRED TestBase.startTest(java.lang.reflect.Method,[Ljava.lang.Object;)[pri:0, instance:null] FROM NODE CreateAccountTest.ensurePrecondition()[pri:0, instance:null]
+385  [Test worker] DEBUG org.testng.internal.Graph - [Graph] =============== DONE SORTING
+385  [Test worker] DEBUG org.testng.internal.Graph - [Graph] ====== SORTED NODES
+385  [Test worker] DEBUG org.testng.internal.Graph - [Graph]               TestBase.setUp()[pri:0, instance:null]
+386  [Test worker] DEBUG org.testng.internal.Graph - [Graph]               TestBase.startTest(java.lang.reflect.Method,[Ljava.lang.Object;)[pri:0, instance:null]
+386  [Test worker] DEBUG org.testng.internal.Graph - [Graph]               CreateAccountTest.ensurePrecondition()[pri:0, instance:null]
+386  [Test worker] DEBUG org.testng.internal.Graph - [Graph] ====== END SORTED NODES
+387  [Test worker] DEBUG org.testng.internal.Graph - [Graph] ADDING NODE TestBase.stopTest()[pri:0, instance:null] 908827865
+387  [Test worker] DEBUG org.testng.internal.Graph - [Graph] ADDING NODE TestBase.tearDown()[pri:0, instance:null] -858478263
+387  [Test worker] DEBUG org.testng.internal.Graph - [Graph] ================ SORTING
+388  [Test worker] DEBUG org.testng.internal.Graph - [Graph] =============== DONE SORTING
+388  [Test worker] DEBUG org.testng.internal.Graph - [Graph] ====== SORTED NODES
+388  [Test worker] DEBUG org.testng.internal.Graph - [Graph] ====== END SORTED NODES
+391  [Test worker] DEBUG org.testng.internal.Graph - [Graph] ADDING NODE CreateAccountTest.registrationPositiveTest()[pri:0, instance:com.telran.contacts.tests.CreateAccountTest@625038c] 1038074545
+391  [Test worker] DEBUG org.testng.internal.Graph - [Graph] ADDING NODE CreateAccountTest.RegistrationNegativeTestFromCSV(com.telran.contacts.models.User)[pri:0, instance:com.telran.contacts.tests.CreateAccountTest@625038c] 284902761
+391  [Test worker] DEBUG org.testng.internal.Graph - [Graph] ================ SORTING
+391  [Test worker] DEBUG org.testng.internal.Graph - [Graph] =============== DONE SORTING
+391  [Test worker] DEBUG org.testng.internal.Graph - [Graph] ====== SORTED NODES
+391  [Test worker] DEBUG org.testng.internal.Graph - [Graph] ====== END SORTED NODES
+2973 [Test worker] INFO  com.telran.contacts.tests.TestBase - Test start RegistrationNegativeTestFromCSV with data: [com.telran.contacts.models.User@3d45efa3]
+4053 [Test worker] INFO  com.telran.contacts.tests.TestBase - Test stop
+5601 [Test worker] INFO  com.telran.contacts.tests.TestBase - Test start RegistrationNegativeTestFromCSV with data: [com.telran.contacts.models.User@25bf8855]
+6492 [Test worker] INFO  com.telran.contacts.tests.TestBase - Test stop
+8400 [Test worker] INFO  com.telran.contacts.tests.TestBase - Test start RegistrationNegativeTestFromCSV with data: [com.telran.contacts.models.User@30114168]
+9283 [Test worker] INFO  com.telran.contacts.tests.TestBase - Test stop
+10766 [Test worker] INFO  com.telran.contacts.tests.TestBase - Test start RegistrationNegativeTestFromCSV with data: [com.telran.contacts.models.User@147855db]
+11676 [Test worker] INFO  com.telran.contacts.tests.TestBase - Test stop
+13420 [Test worker] INFO  com.telran.contacts.tests.TestBase - Test start RegistrationNegativeTestFromCSV with data: [com.telran.contacts.models.User@71fd1d23]
+14318 [Test worker] INFO  com.telran.contacts.tests.TestBase - Test stop

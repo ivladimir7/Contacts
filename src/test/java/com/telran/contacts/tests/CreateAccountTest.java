@@ -12,16 +12,16 @@ public class CreateAccountTest extends TestBase {
 
     @BeforeMethod
     public void ensurePrecondition() {
-        if (!app.getHeader().isLoginLinkPresent()) {
+        if (app.getHeader().isLoginLinkPresent()) {
             app.getHeader().clickOnSignOutButton();
             Assert.assertTrue(app.getHeader().isElementPresent(By.cssSelector("login_login__3EHKB")));
         }
     }
 
-    @Test
+    @Test (enabled = false)
     public void registrationPositiveTest() {
         // click on the Link Login
-        app.getUser().registration();;
+        app.getUser().registration();
         //assert the button Sign out displayed
         Assert.assertTrue(app.getHeader().isElementPresent(By.xpath("//button[contains(.,'Sign Out')]")));
     }
@@ -29,7 +29,7 @@ public class CreateAccountTest extends TestBase {
     @Test(dataProvider = "RegistrationNegativeTestFromCSV",dataProviderClass = DataProviders.class)
     public void RegistrationNegativeTestFromCSV(User user) {
       app.getUser().click(By.xpath("//a[contains(.,'LOGIN')]"));
-      app.getUser().fillLoginRegistrationForm(user); ;
+      app.getUser().fillLoginRegistrationForm(user);
       app.getUser().click(By.xpath("//button[contains(.,'Registration')]"));
       Assert.assertTrue(app.getUser().isAlertPresent());
     }

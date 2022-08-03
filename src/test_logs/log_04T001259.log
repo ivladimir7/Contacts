@@ -1,0 +1,35 @@
+1328 [main] DEBUG org.testng.TestNG - suiteXmlPath: "/Users/ipaparazzi/Library/Caches/JetBrains/IdeaIE2021.3/temp-testng-customsuite.xml"
+1822 [main] DEBUG org.testng.internal.Graph - [Graph] ADDING NODE TestBase.startTest(java.lang.reflect.Method,[Ljava.lang.Object;)[pri:0, instance:null] -787804359
+1822 [main] DEBUG org.testng.internal.Graph - [Graph] ADDING NODE LoginTest.ensurePrecondition()[pri:0, instance:null] -1193044635
+1823 [main] DEBUG org.testng.internal.Graph - [Graph]   ADDING PREDECESSOR FOR LoginTest.ensurePrecondition()[pri:0, instance:null] ==> TestBase.startTest(java.lang.reflect.Method,[Ljava.lang.Object;)[pri:0, instance:null]
+1824 [main] DEBUG org.testng.internal.Graph - [Graph]   REMOVED TestBase.startTest(java.lang.reflect.Method,[Ljava.lang.Object;)[pri:0, instance:null] FROM INDEPENDENT OBJECTS
+1824 [main] DEBUG org.testng.internal.Graph - [Graph]   ADDING PREDECESSOR FOR LoginTest.ensurePrecondition()[pri:0, instance:null] ==> TestBase.setUp()[pri:0, instance:null]
+1824 [main] DEBUG org.testng.internal.Graph - [Graph]   REMOVED TestBase.setUp()[pri:0, instance:null] FROM INDEPENDENT OBJECTS
+1824 [main] DEBUG org.testng.internal.Graph - [Graph] ADDING NODE TestBase.setUp()[pri:0, instance:null] 1452950962
+1824 [main] DEBUG org.testng.internal.Graph - [Graph] ================ SORTING
+1835 [ForkJoinPool.commonPool-worker-5] DEBUG org.testng.internal.Graph - [Graph]   ADDING PREDECESSOR FOR LoginTest.ensurePrecondition()[pri:0, instance:null] ==> TestBase.startTest(java.lang.reflect.Method,[Ljava.lang.Object;)[pri:0, instance:null]
+1836 [ForkJoinPool.commonPool-worker-5] DEBUG org.testng.internal.Graph - [Graph]   ADDING PREDECESSOR FOR LoginTest.ensurePrecondition()[pri:0, instance:null] ==> TestBase.setUp()[pri:0, instance:null]
+1837 [main] DEBUG org.testng.internal.Graph - [Graph]   REMOVED PRED TestBase.setUp()[pri:0, instance:null] FROM NODE LoginTest.ensurePrecondition()[pri:0, instance:null]
+1837 [main] DEBUG org.testng.internal.Graph - [Graph]   REMOVED PRED TestBase.startTest(java.lang.reflect.Method,[Ljava.lang.Object;)[pri:0, instance:null] FROM NODE LoginTest.ensurePrecondition()[pri:0, instance:null]
+1837 [main] DEBUG org.testng.internal.Graph - [Graph] =============== DONE SORTING
+1837 [main] DEBUG org.testng.internal.Graph - [Graph] ====== SORTED NODES
+1837 [main] DEBUG org.testng.internal.Graph - [Graph]               TestBase.setUp()[pri:0, instance:null]
+1837 [main] DEBUG org.testng.internal.Graph - [Graph]               TestBase.startTest(java.lang.reflect.Method,[Ljava.lang.Object;)[pri:0, instance:null]
+1837 [main] DEBUG org.testng.internal.Graph - [Graph]               LoginTest.ensurePrecondition()[pri:0, instance:null]
+1837 [main] DEBUG org.testng.internal.Graph - [Graph] ====== END SORTED NODES
+1840 [main] DEBUG org.testng.internal.Graph - [Graph] ADDING NODE TestBase.stopTest(org.testng.ITestResult)[pri:0, instance:null] 908827865
+1840 [main] DEBUG org.testng.internal.Graph - [Graph] ADDING NODE TestBase.tearDown()[pri:0, instance:null] -858478263
+1840 [main] DEBUG org.testng.internal.Graph - [Graph] ================ SORTING
+1840 [main] DEBUG org.testng.internal.Graph - [Graph] =============== DONE SORTING
+1841 [main] DEBUG org.testng.internal.Graph - [Graph] ====== SORTED NODES
+1841 [main] DEBUG org.testng.internal.Graph - [Graph] ====== END SORTED NODES
+1846 [main] DEBUG org.testng.internal.Graph - [Graph] ADDING NODE LoginTest.loginUserPositiveTest()[pri:0, instance:com.telran.contacts.tests.LoginTest@496bc455] 1827139207
+1846 [main] DEBUG org.testng.internal.Graph - [Graph] ================ SORTING
+1846 [main] DEBUG org.testng.internal.Graph - [Graph] =============== DONE SORTING
+1846 [main] DEBUG org.testng.internal.Graph - [Graph] ====== SORTED NODES
+1846 [main] DEBUG org.testng.internal.Graph - [Graph] ====== END SORTED NODES
+1851 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/ipaparazzi/Library/Caches/JetBrains/IdeaIE2021.3/temp-testng-customsuite.xml
+
+8442 [main] INFO  com.telran.contacts.tests.TestBase - Test start loginUserPositiveTestwith data: []
+9404 [main] INFO  com.telran.contacts.tests.TestBase - PASSED: test method loginUserPositiveTest

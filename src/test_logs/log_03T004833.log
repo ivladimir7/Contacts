@@ -1,0 +1,23 @@
+886  [main] DEBUG org.testng.TestNG - suiteXmlPath: "/Users/ipaparazzi/Library/Caches/JetBrains/IdeaIE2021.3/temp-testng-customsuite.xml"
+1338 [main] DEBUG org.testng.internal.Graph - [Graph] ADDING NODE TestBase.startTest(java.lang.reflect.Method,[Ljava.lang.Object;)[pri:0, instance:null] -787804359
+1338 [main] DEBUG org.testng.internal.Graph - [Graph] ADDING NODE TestBase.setUp()[pri:0, instance:null] 1452950962
+1338 [main] DEBUG org.testng.internal.Graph - [Graph] ================ SORTING
+1371 [main] DEBUG org.testng.internal.Graph - [Graph] =============== DONE SORTING
+1372 [main] DEBUG org.testng.internal.Graph - [Graph] ====== SORTED NODES
+1372 [main] DEBUG org.testng.internal.Graph - [Graph] ====== END SORTED NODES
+1374 [main] DEBUG org.testng.internal.Graph - [Graph] ADDING NODE TestBase.stopTest()[pri:0, instance:null] 908827865
+1374 [main] DEBUG org.testng.internal.Graph - [Graph] ADDING NODE TestBase.tearDown()[pri:0, instance:null] -858478263
+1374 [main] DEBUG org.testng.internal.Graph - [Graph] ================ SORTING
+1374 [main] DEBUG org.testng.internal.Graph - [Graph] =============== DONE SORTING
+1374 [main] DEBUG org.testng.internal.Graph - [Graph] ====== SORTED NODES
+1374 [main] DEBUG org.testng.internal.Graph - [Graph] ====== END SORTED NODES
+1379 [main] DEBUG org.testng.internal.Graph - [Graph] ADDING NODE HomePageTests.openHomePageTest()[pri:0, instance:com.telran.contacts.tests.HomePageTests@451001e5] -1246911036
+1379 [main] DEBUG org.testng.internal.Graph - [Graph] ================ SORTING
+1379 [main] DEBUG org.testng.internal.Graph - [Graph] =============== DONE SORTING
+1379 [main] DEBUG org.testng.internal.Graph - [Graph] ====== SORTED NODES
+1379 [main] DEBUG org.testng.internal.Graph - [Graph] ====== END SORTED NODES
+1383 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/ipaparazzi/Library/Caches/JetBrains/IdeaIE2021.3/temp-testng-customsuite.xml
+
+6417 [main] INFO  com.telran.contacts.tests.TestBase - Test start openHomePageTestwith data: []
+6542 [main] INFO  com.telran.contacts.tests.TestBase - Test stop

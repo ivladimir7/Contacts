@@ -8,7 +8,7 @@ public class RemoveContactTest extends TestBase{
 
     @BeforeMethod
     public void ensurePrecondition() {
-        if (!app.getHeader().isLoginLinkPresent()) {
+        if (app.getHeader().isLoginLinkPresent()) {
             app.getHeader().clickOnSignOutButton();
         } else {
             app.getUser().login();

@@ -5,7 +5,6 @@ import com.telran.contacts.models.User;
 import org.testng.annotations.DataProvider;
 
 import java.io.BufferedReader;
-import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -15,9 +14,17 @@ import java.util.List;
 public class DataProviders {
 
     @DataProvider
+    public Iterator<Object[]> addNewContact() {
+        List<Object[]> list = new ArrayList<>();
+        list.add(new Object[]{"Oliver", "Kan", "12345678987", "kan@gm.com", "Berlin", "goalkiper"});
+        list.add(new Object[]{"Oliver", "Kan", "1234567123", "kan+1@gm.com", "Berlin", "goalkiper"});
+        list.add(new Object[]{"Oliver", "Kan", "1234567321", "kan+2@gm.com", "Berlin", "goalkiper"});
+        return list.iterator();
+    }
+    @DataProvider
     public Iterator<Object[]> addNewContactFromCSV() throws IOException {
         List<Object[]> list = new ArrayList<>();
-        BufferedReader reader = new BufferedReader(new FileReader(new File("src/test/resources/UserDataContacts.csv")));
+        BufferedReader reader = new BufferedReader(new FileReader("src/test/resources/UserDataContacts.csv"));
 
         String line = reader.readLine();
         while(line !=null) {
@@ -27,19 +34,11 @@ public class DataProviders {
         }
         return list.iterator();
 
-        //    @DataProvider
-//    public Iterator<Object[]> addNewContact() {
-//        List<Object[]> list = new ArrayList<>();
-//        list.add(new Object[]{"Oliver","Kan","12345678987","kan@gm.com","Berlin","goalkiper"});
-//        list.add(new Object[]{"Oliver","Kan","1234567123","kan+1@gm.com","Berlin","goalkiper"});
-//        list.add(new Object[]{"Oliver","Kan","1234567321","kan+2@gm.com","Berlin","goalkiper"});
-//        return list.iterator();
-//    }
     }
     @DataProvider
     public Iterator<Object[]> RegistrationNegativeTestFromCSV() throws IOException {
         List<Object[]> list = new ArrayList<>();
-        BufferedReader reader = new BufferedReader(new FileReader(new File("src/test/resources/UserDataContacts1.csv")));
+        BufferedReader reader = new BufferedReader(new FileReader("src/test/resources/UserDataContacts1.csv"));
 
         String line = reader.readLine();
         while(line !=null) {

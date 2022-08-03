@@ -28,4 +28,8 @@ public class UserHelper extends HelperBase {
         type(By.cssSelector("[placeholder='Password"), "AA1616aa_-q");
         click(By.xpath("//button[contains(.,'Login')]"));
     }
+
+    public boolean isErrorPresent() {
+        return isElementPresent(By.xpath("//div[.='Login Failed with code 400']"));
+    }
 }
